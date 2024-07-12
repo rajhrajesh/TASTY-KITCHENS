@@ -1,0 +1,243 @@
+/* index.css */
+
+/* RestaurantHeader component styles */
+.restaurant-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.popular-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #183b56;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px; /* Margin to separate from the text */
+}
+
+.search-input {
+  font-size: 14px; /* Adjusted font size */
+  height: 40px; /* Adjusted height */
+  border: 1px solid #d7dfe9; /* Added border */
+  background-color: #fff; /* Set background color to white */
+  color: #64748b; /* Text color */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 10px; /* Added top margin */
+  padding: 8px 16px; /* Padding inside the input */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Maximum width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and shadow */
+}
+
+.search-input:focus {
+  border-color: #f7931e; /* Border color on focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Margin to add spacing between input and sort options */
+}
+
+.sort-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: orangered;
+  margin-right: 8px;
+}
+
+.select-options {
+  outline: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #475569;
+  cursor: pointer;
+  padding: 4px 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.option {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-header {
+    margin-top: 50px;
+  }
+
+  .popular-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .select-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .select-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .sort-text {
+    font-size: 14px;
+    margin-right: 12px;
+  }
+
+  .select-options {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .option {
+    font-size: 14px;
+  }
+}
+
+/* RestaurantCard component styles */
+.restaurant-li {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.li-restaurant-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  height: 100%;
+}
+
+.li-restaurant-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  object-fit: cover;
+}
+
+.li-restaurant-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.li-restaurant-name {
+  color: #334155;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.li-restaurant-type {
+  color: #64748b;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.li-restaurant-ratings-container {
+  display: flex;
+  align-items: center;
+}
+
+.li-star-icon {
+  font-size: 20px;
+}
+
+.li-restaurant-rating {
+  color: #1e293b;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+.li-restaurant-ratings-count {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 567px) {
+  .li-restaurant-name {
+    font-size: 16px;
+  }
+  .li-restaurant-ratings-count {
+    font-size: 12px;
+  }
+  .li-restaurant-rating {
+    font-size: 14px;
+  }
+  .li-restaurant-type {
+    font-size: 12px;
+  }
+  .li-star-icon {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-li {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant-li {
+    width: 30%;
+    min-width: 350px;
+  }
+}

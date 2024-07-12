@@ -1,0 +1,125 @@
+.restaurant-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.popular-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #183b56;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.select-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #64748b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.search-input {
+  font-size: 14px;
+  height: 30px;
+  border: 1px solid #d7dfe9;
+  background-color: transparent;
+  color: #64748b;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: orangered;
+  margin-right: 8px;
+}
+
+.select-options {
+  outline: none;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #475569;
+  cursor: pointer;
+  padding: 4px 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.option {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-header {
+    margin-top: 50px;
+  }
+
+  .popular-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .select-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .actions-container {
+    justify-content: space-around;
+  }
+
+  .search-input {
+    width: 30%;
+  }
+
+  .sort-text {
+    font-size: 14px;
+    margin-right: 12px;
+  }
+
+  .select-options {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .option {
+    font-size: 14px;
+  }
+}
